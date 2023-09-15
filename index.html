@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Motos</title>
+
+    <link href="https://fonts.cdnfonts.com/css/dragonlord" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <div>
+       
+    </div>
+</head>
+
+<body>
+    <img class="imagen" src="https://live.staticflickr.com/65535/53165391208_3ae13ff53c.jpg" alt="">
+
+    <header>
+
+
+    </header>
+
+    <section  class="container">
+
+    </section>
+
+    <script>
+        
+
+        async function populate() {
+
+            const requestURL = 'motos.json';
+            const request = new Request(requestURL);
+
+            const response = await fetch(request);
+            const MotosText = await response.text();
+
+            const Motos = JSON.parse(MotosText);
+            populateHeader(Motos);
+            populateMotoss(Motos);
+
+        }
+
+        function populateHeader(obj) {
+            const header = document.querySelector('header');
+            const myH1 = document.createElement('h1');
+            myH1.textContent = obj.marca;
+            header.appendChild(myH1);
+
+            const myPara = document.createElement('p');
+            myPara.textContent = `Origen: ${obj.origen} // Fundacion: ${obj.fundacion}`;
+            header.appendChild(myPara);
+        }
+
+        function populateMotoss(obj) {
+            const section = document.querySelector('section');
+            const motoss = obj.miembros;
+
+            for (const hero of motoss) {
+                const myArticle = document.createElement('article');
+                myArticle.classList.add("fondo");
+                const myH2 = document.createElement('h2');
+                const myPara1 = document.createElement('p');
+                const myPara2 = document.createElement('p');
+                const myPara3 = document.createElement('p');
+                const myList = document.createElement('ul');
+
+                myH2.textContent = hero.nombre;
+                myPara1.textContent = `Categoria: ${hero.categoria}`;
+                myPara2.textContent = `Cilindraje: ${hero.cilindraje}`;
+                myPara3.textContent = 'Especificaciones:';
+
+                const Especificaciones = hero.especificaciones;
+                for (const especificaciones of Especificaciones) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = especificaciones;
+                    myList.appendChild(listItem);
+                }
+
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myList);
+
+                section.appendChild(myArticle);
+            }
+        }
+
+        populate();
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+{
+    "marca": "Yamaha",
+    "origen": "Japón",
+    "fundacion": "Año 1887",
+    "fundador": "Torakusu Yamaha",
+    "active": true,
+    "miembros": [
+        {
+            "nombre": "Super Teneré 1200ZE",
+            "cilindraje": "1199 CC",
+            "categoria": "ADVENTURE",
+            "especificaciones": [
+                "Potencia: 110.4Hp (82.4kW) @ 7.250rpm",
+                "Torque: 117,0 Nm (11,9 kg-m) @ 6.000 rpm",
+                "Tipo de motor: 2 cilindros en paralelo inclinados hacia delante, 4 tiempos/ refrigeración por líquido/ DOHC",
+                "Tipo de transmisión: Transmisión constante de 6 velocidades"
+            ]
+        },
+        {
+            "nombre": "MT10 SP",
+            "cilindraje": "998 CC",
+            "categoria": "DEPORTIVAS",
+            "especificaciones": [
+                "Potencia: 163.6 Hp  a 11500 rpm",
+                "Torque: 112.0Nm  a 9000 rpm",
+                "Tipo de motor: 4 Tiempos DOHC, 4  válvulas, refrigerado por líquido",
+                "Tipo de transmisión: Transmisión constante de 6 velocidades"
+            ]
+        },
+        {
+            "nombre": "R7",
+            "cilindraje": "689 CC",
+            "categoria": "SUPER DEPORTIVAS",
+            "especificaciones": [
+                "Potencia: 72,4 CV a 8.750 rpm",
+                "Torque: 67.0 Nm a 6.500 rpm",
+                "Tipo de motor: 4 tiempos DOHC, 4 válvulas, refrigerado por líquido",
+                "Tipo de transmisión: Transmisión constante de 6 velocidades"
+            ]
+        },
+        {
+            "nombre": "XTZ250",
+            "cilindraje": "249 CC",
+            "categoria": "TODOTERRENO",
+            "especificaciones": [
+                "Potencia: 20.4 Hp a 8000 rpm",
+                "Torque: 20.5 Nm a 6500 rpm",
+                "Tipo de motor: 4 Tiempos SOHC,  refriferado por aire y aceite",
+                "Tipo de transmisión: Transmisión constante de 5 velocidades"
+            ]
+        },
+        {
+            "nombre": "FZ25 ABS",
+            "cilindraje": "249 CC",
+            "categoria": "URBANAS Y TRABAJO",
+            "especificaciones": [
+                "Potencia: 20.6 Hp a 8000 rpm",
+                "Torque: 20.0 Nm a 6000 rpm",
+                "Tipo de motor: 4 Tiempos SOHC, refrigerado por aire y aceite",
+                "Tipo de transmisión: Transmisión constante de 5 velocidades"
+            ]
+        },
+        {
+            "nombre": "Tmax TechMax",
+            "cilindraje": "562 CC",
+            "categoria": "AUTOMÁTICAS Y SEMIAUTOMÁTICAS",
+            "especificaciones": [
+                "Potencia: 46.93 Hp  a 7500 rpm",
+                "Torque: 55.7Nm  a 5250 rpm",
+                "Tipo de motor: 4 Tiempos DOHC, 4  válvulas, refrigerado por líquido",
+                "Tipo de transmisión: Automática por variador"
+            ]
+        }
+    ]
+}
